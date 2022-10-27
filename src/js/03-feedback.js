@@ -24,9 +24,10 @@ fillForm();
 
 function onFormSubmit(e) {
     e.preventDefault();
-    formData.email = formEl.elements.email.value;
-    formData.message = formEl.elements.message.value;
+    e.target.email = formEl.elements.email.value;
+    e.target.message = formEl.elements.message.value;
 
+    console.log(e.target.message)
     console.log(formData);
 
     formEl.reset();
