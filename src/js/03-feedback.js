@@ -24,11 +24,6 @@ fillForm();
 
 function onFormSubmit(e) {
     e.preventDefault();
-    e.target.email = formEl.elements.email.value;
-    e.target.message = formEl.elements.message.value;
-
-    console.log(e.target.message)
-    console.log(formData);
 
     formEl.reset();
     localStorage.removeItem(STORAGE_KEY);
